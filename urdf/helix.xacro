@@ -2,7 +2,7 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
 <!-- Very basic representation of Helix motor base and pulleys -->
-<!-- TODO - effort/velocity limits taken from dynamixel_hardware_examples package, not sure what they correpsond to wrt current-->
+<!-- TODO - effort/velocity limits taken from dynamixel_hardware_examples package, not sure what they correpsond to wrt current -->
 
 <material name='black'>
   <color rgba="0.2 0.2 0.2 1.0"/>
@@ -50,7 +50,7 @@
     <child link="link0"/>
     <origin xyz="-0.043 0.025 0.12" rpy="0 0 4.2"/>
     <axis xyz="1 0 0"/>
-    <limit velocity="4.8" effort="1"/>
+    <limit velocity="4.8" effort="1" lower="-3.0" upper="3.0" />
   </joint>
 
    <!-- Link 0 -->
@@ -70,7 +70,7 @@
     <child link="link1"/>
     <origin xyz="0 -0.05 0.12" rpy="0 0 0"/>
     <axis xyz="1 0 0"/>
-    <limit velocity="4.8" effort="1"/>
+    <limit velocity="4.8" effort="1" lower="-3.0" upper="3.0" />
   </joint>
 
    <!-- Link 1 -->
@@ -90,7 +90,7 @@
     <child link="link2"/>
     <origin xyz="0.043 0.025 0.12" rpy="0 0 2.1"/>
     <axis xyz="1 0 0"/>
-    <limit velocity="4.8" effort="1"/>
+    <limit velocity="4.8" effort="1" lower="-3.0" upper="3.0" />
   </joint>
 
    <!-- Link 2 -->
@@ -110,7 +110,7 @@
     <child link="link3"/>
     <origin xyz="0.16 0 0.025" rpy="0 0 0"/>
     <axis xyz="1 0 0"/>
-    <limit velocity="4.8" effort="1"/>
+    <limit velocity="4.8" effort="1" lower="-3.0" upper="3.0" />
   </joint>
 
    <!-- Link 3 -->
@@ -130,7 +130,7 @@
     <child link="link4"/>
     <origin xyz="-0.08 0.138 0.025" rpy="0 0 2.1"/>
     <axis xyz="1 0 0"/>
-    <limit velocity="4.8" effort="1"/>
+    <limit velocity="4.8" effort="1" lower="-3.0" upper="3.0" />
   </joint>
 
    <!-- Link 4 -->
@@ -150,7 +150,7 @@
     <child link="link5"/>
     <origin xyz="-0.08 -0.138 0.025" rpy="0 0 4.2"/>
     <axis xyz="1 0 0"/>
-    <limit velocity="4.8" effort="1"/>
+    <limit velocity="4.8" effort="1" lower="-3.0" upper="3.0" />
   </joint>
 
    <!-- Link 5 -->
@@ -170,7 +170,7 @@
     <child link="link6"/>
     <origin xyz="0.08 -0.138 0.025" rpy="0 0 5.2"/>
     <axis xyz="1 0 0"/>
-    <limit velocity="4.8" effort="1"/>
+    <limit velocity="4.8" effort="1" lower="-3.0" upper="3.0" />
   </joint>
 
    <!-- Link 6 -->
@@ -190,7 +190,7 @@
     <child link="link7"/>
     <origin xyz="0.08 0.138 0.025" rpy="0 0 1.0"/>
     <axis xyz="1 0 0"/>
-    <limit velocity="4.8" effort="1"/>
+    <limit velocity="4.8" effort="1" lower="-3.0" upper="3.0" />
   </joint>
 
    <!-- Link 7 -->
@@ -210,7 +210,7 @@
     <child link="link8"/>
     <origin xyz="-0.16 0 0.025" rpy="0 0 3.1"/>
     <axis xyz="1 0 0"/>
-    <limit velocity="4.8" effort="1"/>
+    <limit velocity="4.8" effort="1" lower="-3.0" upper="3.0" />
   </joint>
 
    <!-- Link 8 -->
