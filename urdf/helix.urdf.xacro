@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<robot name="helix" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find helix_description)/urdf/helix.xacro" />
+  <xacro:include filename="$(find helix_description)/urdf/helix.ros2_control.xacro" />
+
+  <link name="world"/>
+
+  <xacro:helix parent="world">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </xacro:helix>
+
+  <xacro:helix_ros2_control name="helix_ros2_control" />
+</robot>
