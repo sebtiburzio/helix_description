@@ -43,7 +43,7 @@ def generate_launch_description():
         Node(
             package="controller_manager",
             executable="spawner",
-            arguments=["joint_trajectory_controller", "-c", "/controller_manager"],
+            arguments=["joint_position_controller", "-c", "/controller_manager"],
             output="screen",
         ),
 
