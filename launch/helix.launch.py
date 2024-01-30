@@ -48,6 +48,13 @@ def generate_launch_description():
         ),
 
         Node(
+            package="controller_manager",
+            executable="spawner",
+            arguments=["joint_effort_controller", "-c", "/controller_manager"],
+            output="screen",
+        ),
+
+        Node(
             package="robot_state_publisher",
             executable="robot_state_publisher",
             name="robot_state_publisher",
