@@ -50,7 +50,7 @@ def generate_launch_description():
         Node(
             package="controller_manager",
             executable="spawner",
-            arguments=["joint_effort_controller", "-c", "/controller_manager"],
+            arguments=["joint_effort_controller", "--inactive", "-c", "/controller_manager"],
             output="screen",
         ),
 
